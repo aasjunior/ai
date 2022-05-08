@@ -195,36 +195,22 @@ input{
     border: 1px solid #000;
 }
 */
-.slider{
-    display: block;
-    height: 293px;
-    width: 600px;
-    margin: auto;
-    margin-top: 20px;
-    position: relative;
-}
 
-.slider li{
-    list-style: none;
-    position: absolute    
-}
-
-.slider img{
-    margin: auto;
-    height: 100%;
+/*#Objetivos*/
+.content{
+    border: 1px solid #000;
     width: 100%;
-    vertical-align: top;
-}
-
-.slider input{
-    display: none;
+    padding: 0 60px 0 60px;
+    display: flex;
+    flex-direction: row;
 }
 
 .obj_nav{
-    top: 0;
     display: flex;
+    flex-direction: column;
 }
-.slider label{
+
+.obj_nav label{
     width: auto;
     height: 17px;
     border: 2px solid #000;
@@ -236,6 +222,30 @@ input{
     display: flex;
     position: relative;
     z-index: 10;
+}
+
+.slider{
+    display: block;
+    height: 293px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li{
+    list-style: none;
+    position: absolute;
+    display: flex;    
+}
+
+.slider img{
+    margin: auto;
+    width: 60%;
+}
+
+.slider input{
+    display: none;
 }
 
 .slider li:nth-child(1) label{
@@ -254,8 +264,17 @@ input{
     opacity: 0;
     visibility: hidden;
 }
+.slider p{
+    opacity: 0;
+    visibility: hidden;
+}
 
 .slider li input:checked ~ img{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+.slider li input:checked ~ p{
     opacity: 1;
     visibility: visible;
     z-index: 10;
