@@ -141,12 +141,13 @@ header{
     width: 100%;
     padding-top: 60px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: #f1f1f1;
     position: static; 
 }
 
-.obj{
+/*.obj{
     padding: 60px;
     display: flex;
     flex-direction: row;
@@ -162,7 +163,100 @@ header{
     width: 40%;
     display: flex;
     flex-direction: column;
+}*/
+/*.content{
+    height: 520px;
+    width: 80vw;
+    align-self: center;
+    overflow: hidden;
+    position: absolute;
 }
+
+.obj_nav{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    display: none;
+}
+
+
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide{
+    width: 935px;
+    display: flex;
+    border: 1px solid #000;
+}
+*/
+.obj_container-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+}
+
+.obj_container-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content{
+    height: 520px;
+    width: 100vw;
+    padding: 60px 120px;
+    position: static;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    border: 1px solid #000;
+}
+
+.navigation{
+    bottom: 20px;;
+    position: absolute;
+}
+
+input{
+    display: none;
+}
+
+.slides{
+    
+    display: flex;
+    width: 500%;
+    border: 1px solid;
+    height: 100%;
+}
+.slide{
+    padding: 0 60px 0 60px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    transition: .6s;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#obj3-1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#obj3-2:checked ~ .s2{
+    margin-left: -20%;
+}
+
 .dicas{
     top: 1380px;
     width: 100%;
